@@ -5,7 +5,7 @@ function showMessage() {
 function compute() {
 	var principal = document.getElementById("principal").value;
 
-	if(principal == null) {
+	if(!principal) {
 		alert("Enter a number");
 		document.getElementById("principal").focus();
 		return;
