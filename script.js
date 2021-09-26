@@ -4,14 +4,7 @@ function showMessage() {
 
 function compute() {
 	var principal = document.getElementById("principal").value;
-
-	if(!principal) {
-		alert("Enter a number");
-		document.getElementById("principal").focus();
-		return;
-	}
-	
-	if(parseInt(principal) < 1) {
+	if(parseInt(principal) < 1 || !principal) {
 		alert("Enter a positive number");
 		document.getElementById("principal").focus();
 		return;
