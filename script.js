@@ -4,7 +4,7 @@ function showMessage() {
 
 function compute() {
 	var principal = document.getElementById("principal").value;
-	if(parseInt(principal) < 1 || principal === null) {
+	if(parseInt(principal) < 1 || principal === NaN) {
 		alert("Enter a positive number");
 		document.getElementById("principal").focus();
 		return;
